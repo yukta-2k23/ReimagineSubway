@@ -24,6 +24,8 @@
     rel="stylesheet">
   <!-- Link  Remixicon CDN -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/css/style.css">
@@ -171,7 +173,7 @@
   </style>
 </head>
 
-<body class="bg-[#0B8F2C]">
+<body class="bg-[#0B8F2C] relative" data-spy="scroll" data-target="#navbar" data-offset="0">
   <!-- LOADER -->
   <div class="loader">
     <h3 class="lg:text-[2rem] sm:text-[15px] font-black tracking-[0.1rem]"><span class="text-[#FFC800]">SUB</span>WAY:</h3>
@@ -225,23 +227,23 @@
           </a>
           <div class="submenu">
             <div class="submenu-item">
-              <a href="#" class="submenu-link"> FAQ </a>
+              <a href="#faqsection" class="submenu-link"> FAQ </a>
             </div>
             <div class="submenu-item">
-              <a href="#" class="submenu-link">OUR STORY</a>
+              <a href="#ourstorysection" class="submenu-link">OUR STORY</a>
             </div>
             <div class="submenu-item">
-              <a href="#" class="submenu-link">TALK TO US </a>
+              <a href="#talktoussection" class="submenu-link">TALK TO US </a>
             </div>
           </div>
         </div>
       </div>
-      <a href="#"
+      <a href="#home"
         class="text-[#0B8F2C] hidden-btn text-base font-extrabold transition-all  duration-500 ease-in-out hover:text-[#021D09] -ml-10">HOME</a>
-      <a href="#"
+      <a href="#discover"
         class="text-[#0B8F2C] hidden-btn text-base font-extrabold transition-all  duration-500 ease-in-out hover:text-[#021D09]">CRAVING
         MORE?</a>
-      <a href="#"
+      <a href="#ourstores"
         class="text-[#0B8F2C] hidden-btn text-base font-extrabold transition-all  duration-500 ease-in-out hover:text-[#021D09]">OUR
         STORES</a>
       <button class="btn-cssbuttons">
@@ -279,7 +281,7 @@
       </button>
     </div>
   </nav>
-  <section id="section1" class="swiper mySwiper h-screen ">
+  <section id="home" class="swiper mySwiper h-screen ">
     <div class="swiper-wrapper">
       <!-- SUB slide -->
       <div class="item swiper-slide h-screen w-screen bg-[#0B8F2C] relative overflow-x-hidden overflow-y-hidden"
@@ -515,7 +517,7 @@
 
     
   <!-- Discover -->
-  <section class="bg-[#FFF0E0] relative z-[-1]">
+  <section id="discover" class="bg-[#FFF0E0] relative z-[-1]">
 
     <div class="carousel">
       <div class="list">
@@ -1272,7 +1274,7 @@
 
   
   <!-- FAQ -->
-  <div class="faqs-container mt-3">
+  <div id="faqsection" class="faqs-container mt-3">
     <!-- <img src="FAQ.svg" alt=""> -->
     <h3>
       F <span>A</span> Q
@@ -1381,7 +1383,7 @@
 
   <!--   JOURNEY  -->
  <section>
-    <div class="ourstorytitle">
+    <div id="ourstorysection" class="ourstorytitle">
       <div class="ourstorycontainer">
           <h1><span class="our">OUR</span><br>STORY</h1>
       </div>
@@ -1394,7 +1396,7 @@
 
 
   <!-- locate our stores -->
-  <div class="container swiper-slide">
+  <div id="ourstores" class="container swiper-slide">
     <div class="info">
       <div class="logo">
         <img src="/images/subway.svg" alt="subway logo">
@@ -1454,7 +1456,7 @@
 
 
   <!-- TALK TO US -->
-  <section id="section11">
+  <section id="talktoussection">
     <div id="curvedDiv" class="section11main h-[100vh] bg-[#FFF0E0]">
       <div class="scroll">
         <div class="imgbox">
