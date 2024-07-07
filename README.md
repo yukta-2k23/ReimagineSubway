@@ -1,2 +1,1 @@
-# ReImagineSubway
-ReImagine Hackathon-Reimagining SUBWAY 
+# reimagine
