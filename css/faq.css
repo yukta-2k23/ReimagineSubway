@@ -18,6 +18,7 @@ body{
 
 .faqs-container h3{
   /* position: fixed; */
+ 
   text-wrap:balance;
   font-weight: 900;
   font-size: 5rem;

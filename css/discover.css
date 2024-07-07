@@ -109,14 +109,10 @@ a{
     margin-top: 1.2em;
     padding: 5px 0;
     border: none;
-    border-bottom: 1px solid #555;
     background-color: transparent;
     font-weight: bold;
     letter-spacing: 3px;
     transition: background 0.5s;
-}
-.carousel .list .item .introduce .seeMore:hover{
-    background: #eee;
 }
 .carousel .list .item:nth-child(1){
     transform: var(--item1-transform);
@@ -141,6 +137,7 @@ a{
     opacity: var(--item5-opacity);
     pointer-events: none;
 }
+  
 /* animation text in item2 */
 .carousel .list .item:nth-child(2) .introduce .title,
 .carousel .list .item:nth-child(2) .introduce .topic,
@@ -284,22 +281,6 @@ a{
     font-weight: bold;
 }
 
-.carousel.carousel.showDetail .list .item:nth-child(2) .checkout button{
-    font-family: Nunito;
-    border: 1px solid #5555;
-    margin-left: 5px;
-    padding: 5px 10px;
-    letter-spacing: 2px;
-    font-weight: 500;
-    background-color: #e61009;
-    color: #ffffff;
-}
-
-.carousel.carousel.showDetail .list .item:nth-child(2) .checkout button:nth-child(2){
-    font-family: Nunito;
-    background-color: #e4752f;
-    color: #ffffff;
-}
 .carousel.showDetail .list .item:nth-child(2) .detail  .title,
 .carousel.showDetail .list .item:nth-child(2) .detail  .des,
 .carousel.showDetail .list .item:nth-child(2) .detail .specifications,

@@ -38,21 +38,6 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-/*     #scrollbar4::-webkit-scrollbar {
-            width: 12px;
-        }
-        
-        #scrollbar4::-webkit-scrollbar-track {
-            background-color: transparent;
-            border: 1.5px solid #7e7e7e;
-            border-radius: 8px;
-        }
-        
-        #scrollbar4::-webkit-scrollbar-thumb {
-            background-color: #f1f1f1;
-            border: 2px solid #616161;
-            border-radius: 8px;
-        } */
     #navbar{
       opacity: 1;
     }
@@ -191,7 +176,7 @@
   <div class="loader">
     <h3 class="lg:text-[2rem] sm:text-[15px] font-black tracking-[0.1rem]"><span class="text-[#FFC800]">SUB</span>WAY:</h3>
     <h3 class="lg:text-[1.7rem] sm:text-[10px] lg:font-bold lg:tracking-[-0.1rem]">where</h3>
-    <h3 class="lg:text-[1.7rem] sm:text-[10px] lg:font-bold lg:tracking-[-0.1rem]">flavors</h3>
+    <h3 class="lg:text-[1.7rem] sm:text-[10px] lg:font-bold lg:tracking-[-0.1rem]">flavour</h3>
     <h3 class="lg:text-[1.7rem] sm:text-[10px] lg:font-bold lg:tracking-[-0.1rem]">inspire</h3>
     <h3 class="lg:text-[1.7rem] sm:text-[10px] lg:font-bold lg:tracking-[-0.1rem]">smiles!</h3>
   </div>
@@ -1130,27 +1115,11 @@
       </div>
       <div class="arrows">
 
-        <button id="prev">
-          <</button>
-            <button id="next">></button>
-            <div id="back" class="mt-6 mb-4">
-              <button class="seeall c-button c-button--gooey border-none">See All
-                <div class="c-button__blobs">
-                <div></div>
-                <div></div>
-                <div></div>
-                </div>
-              </button>
-              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
-                <defs>
-                  <filter id="goo">
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
-                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
-                    <feBlend in="SourceGraphic" in2="goo"></feBlend>
-                  </filter>
-                </defs>
-              </svg>
-            </div>
+        <button id="prev"><</button>
+        <button id="next">></button>
+        <div id="back" class="mt-6 mb-4">
+          <button id="seeall" class="color-[#0B8F2C] transition-all  hover:font-black hover:text-xl">See All</button>
+        </div>
       </div>
     </div>
   </section>
@@ -1303,7 +1272,7 @@
 
   
   <!-- FAQ -->
-  <div class="faqs-container">
+  <div class="faqs-container mt-3">
     <!-- <img src="FAQ.svg" alt=""> -->
     <h3>
       F <span>A</span> Q
@@ -1410,15 +1379,18 @@
 
   </div>
   
-    <!--   JOURNEY  -->
-<!--   <div class="journeycontainer h-screen">
-        <div class="scrollbar" id="scrollbar4">
-          <embed src="https://teen-titans-journey.vercel.app/" style="width:100%; height: 100%">
-        </div>
-  </div> -->
-  <div id="content" class="content content-full h-screen" style="margin-top: -40px;">
-    <iframe style='overflow-y:hidden; width:100%; height:1560px' src="https://teen-titans-journey.vercel.app/" frameborder="0" width="100%" height="1560px" type="text/html"> </iframe>
-  </div>
+  <!-- journey -->
+  <section>
+    <div class="ourstorytitle">
+      <div class="ourstorycontainer">
+          <h1><span class="our">OUR</span><br>STORY</h1>
+      </div>
+    </div> 
+    </div>
+      <div id="content" class="content content-full h-screen mb-20" style="margin-top: -40px;">
+        <iframe style='overflow-y:hidden; width:100%; height:1560px' src="https://teen-titans-journey.vercel.app/" frameborder="0" width="100%" height="1560px" type="text/html"> </iframe>
+      </div>
+  </section>
 
   <!-- locate our stores -->
   <div class="container swiper-slide">
@@ -1433,8 +1405,44 @@
           class="yellowsubwaytext">Sub</span>way's the destination!</p>
       <p id="order">Order Now On</p>
       <div class="order-buttons">
-        <button class="swiggy"><a href="https://www.swiggy.com">Swiggy</a></button>
-        <button class="zomato"><a href="https://www.zomato.com">Zomato</a></button>
+        <div class="zomato mt-2 mb-2">
+          <button class="c-button c-button--gooey"><a href="https://www.zomato.com/">Zomato</a>
+            <div class="c-button__blobs">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </button>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                  result="goo"></feColorMatrix>
+                <feBlend in="SourceGraphic" in2="goo"></feBlend>
+              </filter>
+            </defs>
+          </svg>
+        </div>
+        <div class="swiggy mt-2 mb-2">
+          <button class="c-button c-button--gooey"><a href="https://www.swiggy.com/">SWIGGY</a>
+            <div class="c-button__blobs">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </button>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                  result="goo"></feColorMatrix>
+                <feBlend in="SourceGraphic" in2="goo"></feBlend>
+              </filter>
+            </defs>
+          </svg>
+        </div>
       </div>
     </div>
     <div class="image-container">
@@ -1444,10 +1452,9 @@
   </div>
 
 
-
   <!-- TALK TO US -->
   <section id="section11">
-    <div id="curvedDiv" class="section11main h-[90vh] bg-[#FFF0E0]">
+    <div id="curvedDiv" class="section11main h-[100vh] bg-[#FFF0E0]">
       <div class="scroll">
         <div class="imgbox">
           <img class="h-[17rem]" src="images/sub1.jpeg">
@@ -1472,7 +1479,7 @@
           <img class="h-52" src="images/sub2.jpeg">
         </div>
       </div>
-      <div class="talktous h-full w-1/2 px-16 pb-5 absolute right-0 ">
+      <div class="talktous h-full w-1/2 px-16 py-5 pb-5 absolute right-0 ">
         <form class="form ">
           <p id="heading">TALK TO US !</p>
           <div class="field">

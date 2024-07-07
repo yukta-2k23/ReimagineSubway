@@ -1021,8 +1021,8 @@ input::placeholder{
 
 
 /* Submit button */
+/* seemore,swiggy,zomato */
 .c-button {
-  color: #000;
   font-weight: 600;
   font-size: 14px;
   border-radius: 24px;
@@ -1035,14 +1035,35 @@ input::placeholder{
   z-index: 1;
 }
 
+.zomato .c-button{
+  color: #FF002D;
+
+}
+.swiggy .c-button{
+  color: #FE8400;
+
+}
+
 .c-button--gooey {
-  color: #0B8F2C;
   text-transform: uppercase;
   letter-spacing: 2px;
-  border: 2px solid #0B8F2C;
+  color:black;
   border-radius: 24px;
   position: relative;
   transition: all 700ms ease;
+}
+.submit .c-button--gooey,
+.seeMore .c-button--gooey{
+  color: #0B8F2C;
+  border: 2px solid #0B8F2C;
+}
+.zomato .c-button--gooey{
+  color: #FF002D;
+  border: 2px solid #FF002D;
+}
+.swiggy .c-button--gooey{
+  color: #FE8400;
+  border: 2px solid #FE8400;
 }
 
 .c-button--gooey .c-button__blobs {
@@ -1059,13 +1080,24 @@ input::placeholder{
 }
 
 .c-button--gooey .c-button__blobs div {
-  background-color: #0B8F2C;
+
   width: 34%;
   height: 100%;
   border-radius: 100%;
   position: absolute;
   transform: scale(1.4) translateY(125%) translateZ(0);
   transition: all 700ms ease;
+}
+.submit .c-button--gooey .c-button__blobs div,
+.seeMore .c-button--gooey .c-button__blobs div
+{
+  background-color: #0B8F2C;
+}
+.zomato .c-button--gooey .c-button__blobs div{
+  background-color: #FF002D;
+}
+.swiggy .c-button--gooey .c-button__blobs div{
+  background-color: #FE8400;
 }
 
 .c-button--gooey .c-button__blobs div:nth-child(1) {
@@ -1362,5 +1394,41 @@ input::placeholder{
   }
   .checkouttext{
     opacity: 0;
+  }
+}
+/* JOURNERY */
+.ourstorytitle {
+  padding:0 0;
+  margin-top: 10%;
+  background-color: #FFC800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.ourstorycontainer {
+  max-width: 90%;
+  margin: auto;
+}
+
+.ourstorycontainer h1 {
+  color: #0B8F2C;
+  font-size: 10em;
+  line-height: 1.2;
+  font-weight: 900;
+  margin: 0;
+}
+.ourstorycontainer h1 .our{
+  font-size:0.8em;
+  color:transparent;
+  -webkit-text-stroke:4px #0B8F2C ;
+}
+
+
+@media (max-width: 768px) {
+  .ourstorycontainer h1 {
+      font-size: 6em;
   }
 }

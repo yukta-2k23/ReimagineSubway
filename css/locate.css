@@ -9,7 +9,7 @@
     height: 100vh;
 }
 .info {
-    padding: 2%;
+    padding: 3em 2em;
     background-color: #0B8F2C;
     width: 40%;
     display: flex;
@@ -24,14 +24,14 @@
 }
 
 .info h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 900;
     margin-bottom: 20px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0);
 }
 
 .info h2 {
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: 800;
     margin-bottom: 2px;
     font-style: italic;
@@ -49,47 +49,12 @@
     color:#FFC700;
 }
 #order {
-    font-size: 2rem;
+    font-size: 1em;
     font-weight: 800;
     color: #032B0D;
     margin-bottom: 10px;
 }
 
-.order-buttons {
-
-    display: flex;
-    gap: 20px;
-}
-
-.order-buttons button {
-    background-color: #0d0f0d;
-    color: #fff;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.order-buttons .swiggy {
-    background-color: #ff6f00;
-}
-
-.order-buttons .zomato {
-    background-color: #dd1010;
-}
-
-.order-buttons button:hover {
-    transform: scale(1.1);
-}
-
-.order-buttons a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: medium;
-    font-family: 'Nunito';
-    font-weight: 700;
-}
 
 .image-container {
     width: 80%;
