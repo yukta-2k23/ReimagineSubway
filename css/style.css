@@ -1397,6 +1397,9 @@ input::placeholder{
   }
 }
 /* JOURNERY */
+#ourstorysection{
+	opacity:1;
+}
 .ourstorytitle {
   padding:0 0;
   margin-top: 10%;
@@ -1431,4 +1434,10 @@ input::placeholder{
   .ourstorycontainer h1 {
       font-size: 6em;
   }
+}
+
+@media screen and (max-width: 599px) {
+	#ourstorysection{
+		opacity:0;
+	}
 }
