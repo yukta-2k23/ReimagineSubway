@@ -1026,6 +1026,7 @@ input::placeholder{
 /* Submit button */
 /* seemore,swiggy,zomato */
 .c-button {
+color:black;
   font-weight: 600;
   font-size: 14px;
   border-radius: 24px;
